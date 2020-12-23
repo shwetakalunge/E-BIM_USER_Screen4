@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .clearfix {
     zoom: 1
 }
@@ -27,6 +32,16 @@ body {
     src: url(Saira-Regular.ttf)
 }
 
+@font-face {
+    font-family: saira-medium;
+    src: url(Saira-Medium.ttf)
+}
+
+@font-face {
+    font-family: saira-Semibold;
+    src: url(Saira-SemiBold.ttf)
+}
+
 /*---------------------------------*/
 
 .Section_Login1 {
@@ -45,16 +60,19 @@ body {
     background-color: white;
     -webkit-box-flex: 1;
     -ms-flex: 1;
-    flex: 1
+    flex: 1;
+    width: 100%;
+    min-width: 230px;
 }
 
 .right {
     width: 100%;
-    max-width: 1050px;
+    /* max-width: 1048px;*/
+    flex: 1048px;
     -webkit-box-flex: 500px;
     -ms-flex: 500px;
-    flex: 1050px;
     background: #E5E5E5;
+
 }
 
 h1 {
@@ -67,16 +85,17 @@ h1 {
     margin-left: 25px
 }
 
-ul {
-    margin-left: 30px;
+.main_nav {
+    text-align: center;
 }
 
-li {
+.main_nav li {
     list-style: none;
     cursor: pointer;
-    padding: 20px;
+    padding: 20px 0px;
     color: #C7C7C7;
     font-family: saira-regular;
+
 }
 
 li:hover,
@@ -84,16 +103,21 @@ li:active {
     background-color: #F3CABB;
     border-radius: 4px;
     color: black;
+    font-family: saira-medium;
+    width: 165px;
+    margin: auto
 }
 
 .section_logo {
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 38px;
+
 }
 
 .logo_class {
-    width: 100px;
-    height: 113px;
+    /*  width: 100px;
+    height: 113px;*/
 }
 
 
@@ -115,7 +139,7 @@ p {
     margin: 20px;
 }
 
-.modal-title {
+/*.modal-title {
 
     font-family: saira-regular;
     font-style: normal;
@@ -124,24 +148,24 @@ p {
     line-height: 28px;
     color: #404040;
 
-}
+}*/
 
 select {
-   width: 260px;
+    width: 260px;
     font-family: saira-regular;
     background-color: #F8F8F8;
     border: 0.5px solid #CACACA;
     background-image: url(../images/dropdown-symbol.png);
     background-repeat: no-repeat;
-    -webkit-appearance:none;
-    -moz-appearance:none;
-    appearance:none;
-      background-position: right;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-position: right;
 }
-.seclect-column{
-    text-align: center
-}
-.cross_image{
+
+.seclect-column {}
+
+.cross_image {
     cursor: pointer;
 }
 
@@ -163,14 +187,20 @@ select {
     height: 40px;
 }
 
-.btn:hover {
-    color: white
-}
 
 .upload_image {
     margin-right: 10px;
 }
 
+h5 {
+    margin: auto;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: saira-Semibold;
+    line-height: 28px;
+    text-align: center;
+
+}
 
 .btn-full {
 
@@ -180,32 +210,42 @@ select {
     font-size: 14px;
     line-height: 22px;
     color: #FFFFFF;
-      background: #EB5A2C;
+    background: #EB5A2C;
     border-radius: 6.35px;
     text-align: center;
     width: 85px;
     height: 40px;
     text-align: center
-
 }
 
 .button_sec {
     text-align: center;
     margin: auto;
 
-
 }
-.modal-body text{
-        font-family: saira-regular;
+
+.modal-content {
+    width: 645px;
+    height: 289px;
+}
+
+.modal-body text {
+    font-family: saira-regular;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height:12px;
+    line-height: 12px;
     color: #676767;
+
 }
+
+.modal-body {
+    margin: auto;
+
+}
+
 .div_Submit {
-    text-align: center;
-    margin: 50px;
+    margin-top: 50px;
 
 }
 
@@ -216,4 +256,195 @@ select {
     height: 40px;
     color: white;
     font-family: saira-regular;
+
+}
+
+.btn2 {
+    background: #EB5A2C;
+    border-radius: 6.35px;
+    color: white;
+    padding: 8px;
+    width: 100px;
+    position: absolute;
+    bottom: 10%;
+    left: 45%;
+    font-family: saira-regular;
+    border: none;
+}
+
+.login-box {
+    text-align: center;
+    background: #FFFFFF;
+    border: 0.5px solid #EAEAEA;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.06);
+    border-radius: 19.0044px;
+    margin: 26px 74px 29px 31px;
+    height: 75vh;
+    position: relative;
+}
+
+.btn3 {
+    background: #EB5A2C;
+    border-radius: 6.35px;
+    width: 222px;
+    height: 64px;
+    font-family: saira-medium;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+    border: none;
+    max-width: 180px
+}
+
+.cloud-image {
+    width: 25px;
+    margin-right: 20px;
+    color: white;
+    margin-left: 1px
+}
+
+.P_UploadRequirements {
+    font-family: saira-regular;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #676767;
+    padding: 30px 0px 0px 0px;
+}
+
+.p_json {
+    font-family: saira-regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 16px;
+    color: #676767;
+    padding: 5px 0px 0px 0px;
+    margin-right: 100px
+}
+
+.btn2 {
+    background: #EB5A2C;
+    border-radius: 6.35px;
+    color: white;
+    padding: 8px;
+    width: 100px;
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+    font-family: saira-regular;
+    border: none;
+}
+
+.modal-dialog {
+    margin-top: 100px;
+
+
+}
+
+.btn4 {
+    background: #EB5A2C;
+    border-radius: 6.35px;
+    color: white;
+    padding: 8px;
+    width: 100px;
+    position: absolute;
+    bottom: 10%;
+    left: 45%;
+    font-family: saira-regular;
+    border: none;
+
+}
+
+/*-----------------------------------------------------------------------------------*/
+#panel,
+#flip {
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+    /*  border: solid 1px #c3c3c3;*/
+    visibility: hidden;
+}
+
+#panel {
+    padding: 10px;
+    display: none;
+
+}
+
+#flip {
+    margin-bottom: 25px
+}
+
+/*BIG TABLET TO 1200PX (WIDTH SMALLER THAN THE 1140 PX ROWS) */
+@media only screen and (max-width:1200px) {
+
+    #panel,
+    #flip {
+        visibility: visible;
+
+    }
+
+    ul {
+        text-align: center;
+    }
+
+    ul li {
+        list-style: none;
+        cursor: pointer;
+        padding: 20px 0px;
+        color: #C7C7C7;
+        font-family: saira-regular;
+
+    }
+
+    .main_nav {
+        display: none
+    }
+}
+
+
+/*SMALL TABLETS TO BIG TABLETS-IPAD IN LANDSCAPE PHONES(768 TO 1023PX)*/
+@media only screen and (max-width:1023px) {
+   /* .modal-dialog {
+        margin-top: 200px;
+    }
+*/
+    .modal-content {
+        width: 445px;
+        height: 289px;
+    }
+}
+
+/*SMALL TABLETS TO BIG TABLETS-IPAD IN LANDSCAPE PHONES(768 TO 1023PX)*/
+@media only screen and (max-width:767px) {
+    .modal-content {
+        width: 300px;
+        height: 289px;
+        margin: 10px;
+        
+    }
+}
+@media only screen and (max-width:470px) {
+    .modal-content {
+       width: 300px;
+        height: 289px;
+        margin: auto;
+        
+    }
+    
+@media only screen and (max-width:320px) {
+    .modal-content {
+       width: 300px;
+        height: 289px;
+        margin: auto;
+        
+    }
 }

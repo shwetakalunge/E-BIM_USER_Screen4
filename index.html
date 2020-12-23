@@ -28,19 +28,46 @@
 
         <div class="left">
             <section class="section_logo">
-                <img src="images/logo.png" class="logo_class">
+                <img src="../Screen_4/images/logo.png" class="logo_class">
             </section>
-            <ul>
+
+
+
+
+            <ul class="main_nav">
+                <li>Home</li>
                 <li>Requirmnets</li>
-                <li>Upload Model</li>
                 <li data-toggle="modal" data-target="#exampleModal">Verify</li>
             </ul>
+            <div id="flip">
+                <button style="  font-family: saira-regular;border: none; height: 45px;padding: 10px;cursor: pointer">Click For More Options</button>
+
+            </div>
+            <div id="panel">
+                <ul>
+                    <li>Home</li>
+                    <li>Requirmnets</li>
+                    <li data-toggle="modal" data-target="#exampleModal">Verify</li>
+                </ul>
+
+            </div>
         </div>
+
+
+
         <div class="right">
             <div class="home">
                 <h1>Home</h1>
             </div>
+            <section class="login-box">
+                <p class="P_UploadRequirements">Upload Requirements</p>
 
+                <button class="btn3"><img src="../Screen_2/images/cloud-icon.png" alt="" class="cloud-image">Upload</button>
+
+                <p class="p_json">JSON Format Max 3 MB</p>
+
+                <input class="btn4" type="button" name="" value="Submit">
+            </section>
 
             <!-- Button trigger modal -->
             <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
@@ -48,18 +75,18 @@
             </button>-->
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-dialog " role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel ">Verify</h5>
-                            <img src="../cross_symbol.png" class="cross_image"  data-dismiss="modal" aria-label="Close">
-                         
-                            
+                            <h5 id="exampleModalLabel ">Verify</h5>
+                            <img src="../cross_symbol.png" class="cross_image" data-dismiss="modal" aria-label="Close">
+
+
                             <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>-->
                         </div>
-                        <div class="modal-body text-center">
+                        <div class="modal-body ">
                             <!-- <div class="col span-1-of-2"> <text>Select Project Name</text>-->
 
 
@@ -72,7 +99,7 @@
                                 <option value=""></option>
                             </select>
                             <div class="div_Submit">
-                                <button class="btn-submit">Verify Now</button>
+                                <input class="btn2" type="button" name="" value="Verify Now">
                             </div>
                         </div>
                     </div>
@@ -85,4 +112,16 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body></html>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-------------------------------------------------------->
+    <script>
+        $(document).ready(function() {
+            $("#flip").click(function() {
+                $("#panel").slideToggle("slow");
+            });
+
+
+        }); </script>
+        </body></html>
